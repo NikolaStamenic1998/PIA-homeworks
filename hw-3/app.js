@@ -37,3 +37,101 @@ let justRegistered = false;
 clearInterval(time);
 
 
+let quizArray = [
+  {
+    question:
+      "Koje godine je počeo Drugi Srpski ustanak?",
+    options: ["1815.", "1804.", "1813.", "1835.", "1811."],
+    correct: 0,
+    
+  },
+  {
+    question: "Koji je glavni grad Švajcarske?",
+    options: [
+      "Bern",
+      "Lucern",
+      "Basel",
+      "Cirih",
+      "Lugano",
+      "Lozana",
+    ],
+    correct: 0,
+    
+  },
+  {
+    question:
+      "Od koje do koje godine je vladao knez Mihailo Obrenović",
+    options: [
+      "Od 1839. do 1842. i od 1860. do 1868.",
+      "Od 1849. do 1852. i od 1860. do 1868.",
+      "Od 1821. do 1842. i od 1865. do 1868.",
+      "Od 1849. do 1862. i od 1870. do 1888.",
+      "Od 1819. do 1842. i od 1854. do 1868.",
+      "Od 1837. do 1842. i od 1860. do 1868.",
+      "Od 1839. do 1842. i od 1862. do 1865.",
+    ],
+    correct: 0,
+    
+  },
+  {
+    question: "Ko je bio trener FC Barselone u vreme kada je Mesi imao svoj debi za prvi tim?",
+    options: [
+      "Frank Rajkard",
+      "Valverde",
+      "Pepe Gvardiola",
+      "Jup Hajkens",
+      "Tito Viljanova",
+      
+    ],
+    correct: 0,
+    
+  },
+  {
+    question:
+      "Glavnu ulogu u prvom delu filma Kum igra?",
+    options: [
+      "Marlon Brando",
+      "Robert de Niro",
+      "Deni de Vito",
+      
+    ],
+    correct: 0,
+    
+  },
+  {
+    question: "Koji glumački par igra glavne uloge u filmu Friends with Benefits?",
+    options: ["Džastin Timberlejk i Mila Kunis", "Bred Pit i Mila Kunis", "Monika Beluči i Bred Pit", "Nikolas Kejdž i Mila Kunis"],
+    correct: 0,
+    
+  },
+  {
+    question: "Koje godine je Srbija pobedila na Eurosongu?",
+    options: ["2007.", "2008.", "2004.", "2011."],
+    correct: 0,
+   
+  },
+  {
+    question:
+      "Koje godine je izvršen atentat na austrougarskog prestolonaslednika Ferdinanda?",
+    options: ["1914.", "1918.", "1921."],
+    correct: 0,
+    
+  },
+  {
+    question:
+      "Koji je glavni grad Malte",
+    options: ["La Valeta", "Zejtun", "Kormi", "Zabar", "Sigijevi"],
+    correct: 0,
+    
+  },
+  {
+    question:
+      "Ko je autor knjige Tihi Don?",
+    options: ["Mihail Šolohov", "Lav Tolstoj", "Sergej Jesenjin", "Aleksandar Puškin", "Vladimir Majakovski"],
+    correct: 0,
+    
+  },
+  
+];
+
+
