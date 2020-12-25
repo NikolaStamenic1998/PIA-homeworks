@@ -1,5 +1,4 @@
 
-
 let quiz = document.querySelector("#quiz");
 let intro = document.querySelector("#introduction");
 let assesFT = document.querySelector("#assess-ft");
@@ -134,4 +133,63 @@ let quizArray = [
   
 ];
 
+
+startBtn.addEventListener("click", startQuiz);
+answersDiv.addEventListener("click", assesSelection);
+submit.addEventListener("click", addToHighscores);
+clearHighscoresBtn.addEventListener("click", clearHighscores);
+$("#staticBackdrop").on("shown.bs.modal", function (e) {
+  loadHighScores();
+});
+$("#staticBackdrop").on("hidden.bs.modal", function (e) {
+  if (justRegistered) {
+    init();
+  }
+});
+
+init();
+
+
+function init() {
+  timeSpan.textContent = timeRemining;
+  quiz.style.display = "none";
+  allDone.style.display = "none";
+  assesFT.style.display = "none";
+  intro.style.display = "block";
+  startBtn.style.display = "block";
+  progressBar.style.display = "none";
+
+  totalSeconds = 200;
+  timeRemining = totalSeconds;
+  secondsElapsed = 0;
+  discountSeconds = 0;
+  currentQuestion = 0;
+  progress = 0;
+  correctAnswers = 0;
+  correctScore = 0;
+  justRegistered = false;
+  timeSpan.textContent = timeRemining;
+
+  if (localStorage.getItem("highscore")) {
+    localHighscoresArray = localStorage.getItem("highscore").split(",");
+  }
+  clearInterval(time);
+  updateProgress();
+
+  allDone.firstElementChild.setAttribute("class", "alert alert-info mt-0 mb-0");
+  submit.setAttribute("class", "btn btn-info");
+  progressBar.firstElementChild.setAttribute(
+    "class",
+    "progress-bar bg-info progress-bar-striped progress-bar-animated"
+  );
+}
+
+function startQuiz() {
+  intro.style.display = "none";
+  startBtn.style.display = "none";
+  quiz.style.display = "block";
+  time = setInterval(timer, 1000);
+  progressBar.style.display = "block";
+  showQuestion();
+}
 
