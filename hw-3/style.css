@@ -21,3 +21,11 @@
 
 
 
+/* ----- Media Queries ----- */
+  
+@media (min-width: 992px) {
+  .movie-image {
+    width: 100%;
+    max-height: 300px;
+  }
+}
